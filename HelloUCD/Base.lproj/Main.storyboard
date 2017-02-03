@@ -44,7 +44,7 @@
                                         <string key="text">Change 
 background</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                        <color key="textColor" red="0.50000032723753352" green="0.16434634246542301" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" red="1" green="0.22964159967124287" blue="0.25462407288955047" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7JV-YH-0Ka">
@@ -57,6 +57,9 @@ background</string>
                                         <state key="normal" title="Color-3">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
+                                        <connections>
+                                            <action selector="color3_click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y4k-Lu-0ea"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6dw-Dy-p8W">
                                         <rect key="frame" x="8" y="148" width="57" height="30"/>
@@ -68,6 +71,9 @@ background</string>
                                         <state key="normal" title="Color-2">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
+                                        <connections>
+                                            <action selector="color2_click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tLK-lQ-A5P"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RrG-do-wgB">
                                         <rect key="frame" x="8" y="89" width="57" height="30"/>
@@ -79,6 +85,9 @@ background</string>
                                         <state key="normal" title="Color-1">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
+                                        <connections>
+                                            <action selector="color1_click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="26l-DA-0fA"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -99,6 +108,20 @@ background</string>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iTx-49-pLx">
                                 <rect key="frame" x="589" y="39" width="73" height="326"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="u" translatesAutoresizingMaskIntoConstraints="NO" id="kmj-hG-EsN">
+                                        <rect key="frame" x="4" y="31" width="64" height="67"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="d" translatesAutoresizingMaskIntoConstraints="NO" id="ybU-aH-Lgg">
+                                        <rect key="frame" x="4" y="240" width="64" height="67"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="c" translatesAutoresizingMaskIntoConstraints="NO" id="Fqe-y8-pgL">
+                                        <rect key="frame" x="4" y="130" width="64" height="67"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
@@ -124,6 +147,9 @@ background</string>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="btn_color1" destination="RrG-do-wgB" id="exd-SY-lyy"/>
+                        <outlet property="btn_color2" destination="6dw-Dy-p8W" id="nz5-5u-OM1"/>
+                        <outlet property="btn_color3" destination="7JV-YH-0Ka" id="nqM-Al-lwm"/>
                         <outlet property="left_view" destination="hug-wY-Op7" id="DMR-ra-6C0"/>
                         <outlet property="right_view" destination="iTx-49-pLx" id="nDr-JV-uJ6"/>
                     </connections>
@@ -134,6 +160,9 @@ background</string>
         </scene>
     </scenes>
     <resources>
+        <image name="c" width="292" height="400"/>
+        <image name="d" width="300" height="400"/>
+        <image name="u" width="346" height="400"/>
         <image name="ucdlogo" width="196" height="285"/>
     </resources>
 </document>
