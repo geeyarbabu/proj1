@@ -80,7 +80,6 @@ background</string>
                                         <color key="backgroundColor" red="0.066129609942436218" green="0.42773875594139099" blue="0.65177464485168457" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="DJ4-ij-xCI"/>
-                                            <constraint firstAttribute="width" constant="57" id="gO9-3j-oRy"/>
                                         </constraints>
                                         <state key="normal" title="Color-1">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
